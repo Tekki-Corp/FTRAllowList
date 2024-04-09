@@ -1,0 +1,58 @@
+input[readOnly] {
+    background-color: #e9ecef;
+    opacity: 1;
+}
+
+/* Ensure readOnly inputs don't change appearance on focus */
+input[readOnly]:focus {
+    background-color: #e9ecef;
+    /* Same as the non-focused state */
+    border-color: #ced4da;
+    /* Bootstrap's default border color for input */
+    outline: none;
+    /* Removes the outline */
+    box-shadow: none;
+    /* Removes the box shadow that might be applied on focus */
+}
+
+body {
+    background-color: #343a40;
+    /* Dark gray background */
+    color: #ffffff;
+    /* White text color */
+}
+
+.accordion-button::after {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+input.form-control.bg-dark.text-white {
+    color: #ffffff;
+    /* Ensures text is white */
+}
+
+.edit-mode {
+    background-color: white !important;
+    /* Ensure the background is white */
+    color: black !important;
+    /* Ensure the text is black for readability */
+    transition: none;
+}
+
+.strike-through {
+    position: relative;
+}
+
+.strike-through::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width: 100%;
+    border-top: 16px solid rgb(255, 0, 0);
+    z-index: 1;
+}
+
+.red-text {
+    color: red;
+}
